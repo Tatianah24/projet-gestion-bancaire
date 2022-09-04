@@ -91,6 +91,7 @@ public class VersementDAO {
 	            ResultSet rs=ps.executeQuery();  
 	            while(rs.next()){  
 	                Versement v=new Versement();
+	                v.setId_vers(rs.getInt("id_vers"));
 	                v.setNcompte_vers(rs.getInt("ncompte_vers"));
 	                v.setMontant_vers(rs.getInt("montant_vers"));  
 	                v.setDate_vers(rs.getDate("date_vers"));

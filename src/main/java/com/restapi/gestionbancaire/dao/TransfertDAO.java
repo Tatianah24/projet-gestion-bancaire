@@ -115,6 +115,7 @@ public class TransfertDAO {
 	            ResultSet rs=ps.executeQuery();  
 	            while(rs.next()){  
 	                Transfert t = new Transfert();
+	                t.setId_trans(rs.getInt("id_trans"));
 	                t.setNcompte_trans(rs.getInt("ncompte_trans"));
 	                t.setNcompte_transb(rs.getInt("ncompte_transb"));
 	                t.setMontant_trans(rs.getInt("montant_trans"));  

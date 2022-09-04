@@ -94,6 +94,7 @@ public class RetraitDAO {
             ResultSet rs=ps.executeQuery();  
             while(rs.next()){  
                 Retrait r=new Retrait();
+                r.setId_ret(rs.getInt("id_ret"));
                 r.setCheque_ret(rs.getString("cheque_ret"));
                 r.setNcompte_ret(rs.getInt("ncompte_ret"));
                 r.setMontant_ret(rs.getInt("montant_ret"));  

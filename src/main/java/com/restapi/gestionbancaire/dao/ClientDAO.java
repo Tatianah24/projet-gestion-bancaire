@@ -29,8 +29,6 @@ public class ClientDAO {
         return list; 
 	}
 	
-	
-	
 	//create client
 	public static int createClient(Client c) {
 		int status = 0;
